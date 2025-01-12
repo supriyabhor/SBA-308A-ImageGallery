@@ -9,7 +9,7 @@ export async function popularCatagory()
 }
 
 //fetch images by category with pagination 
-// pagination- page and per page param
+
 
 export async function fetchImagesByCategory(category, page = 1, per_page = 15) {
     console.log(`Fetching images for category: ${category} (Page: ${page}, Per Page: ${per_page})`);
@@ -30,4 +30,23 @@ export async function fetchImagesByCategory(category, page = 1, per_page = 15) {
         console.error('Error fetching images:', error);
         return [];
     }
+}
+
+//fetch image details by ID
+export async function fetchImageDetails(id)
+{
+    console.log(`fetching details for image using ID: ${id}`);
+    try {
+        const response =await axios.get(`${image_URL}photos/${id}`,{
+            headers: {
+                'Authorization': API_KEY
+            }
+        });  
+        console.log('Fetched image details:', response.data);
+        return response.data; 
+    }catch (err)
+        {
+            console.error('Error fetching image details:', error);
+            return null;
+        }
 }
