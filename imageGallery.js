@@ -1,3 +1,5 @@
+import { fetchImagesByCategory } from "./api";
+
 let currentPage = 1;
 const perPage = 10; // images
 
@@ -17,7 +19,29 @@ export async function showGallery(category, page= currentPage, per_page = perPag
         imgElement.addEventListener('click', showImageDetails);
         galleryContainer.appendChild(imgElement);
     });
+
+    // prev next button control
+
+const paginationContainer = document.getElementById('pagination');
+paginationContainer.innerHTML = `
+       <button id="prev-button" ${page === 1 ? 'disabled' : ''}>Previous</button>
+       <button id="next-button">Next</button>
+    `;
+
+document.getElementsByid(prev-button).addEventListener('click', ()=> {
+    if (page > 1)
+    {
+        showGallery(category, page -1, perPage);  
+    }
+  });
+
+  document.getElementById('next-button').addEventListener('click', () => { 
+     showGallery(category, page + 1, perPage);
+  });
+
 }
+
+
 
 
 
