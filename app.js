@@ -1,31 +1,4 @@
-// import { popularCatagory } from './api.js';
 
-// import { displayCategories, showGallery } from './imageGallery.js';
-
-// async function initialLoadPage()
-// {
-//   console.log("page loading....");
-
-//   const categories = await popularCatagory();
-//   console.log("Popular Categories :", categories);
-//   displayCategories(categories);
-  
-//   const searchButton = document.getElementById("search-button");
-//   const searchInput = document.getElementById("search-input");
-
-//   searchButton.addEventListener('click', async () => {
-//     const searchQuery = searchInput.value.trim();
-//     console.log('Search query:', searchQuery);
-//     if (searchQuery) {
-//         await showGallery(searchQuery, 1, 15);  // Search by keyword, page 1, 15 images per page
-//     } else {
-//         alert('Please enter ');
-//     }
-// });
-  
-// }
-
-// initialLoadPage()
 
 const API_KEY = 'RjMK49lckHFPY6mHRQr3wGH2vIbrWlhB0nEYGNlUAfx9Im4IKWnUldSR';
 const image_URL = 'https://api.pexels.com/v1/';
