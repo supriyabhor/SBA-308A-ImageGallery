@@ -1,19 +1,36 @@
 body {
     font-family: Arial, sans-serif;
     padding: 40px;
-   
+    background-image: url('https://thumb.ac-illust.com/f9/f966b2d37e3f6dd6b2067251da08df71_t.jpeg');
+    background-size: cover; 
 }
 
 #search-container {
     margin-bottom: 20px;
     text-align: center;
+    padding: 10px;
+    
 }
 
 #categories-container
 {
     padding-left: 10px;
+    
 
 }
+
+#category-dropdown
+{
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
+#category-dropdown option
+{
+    padding: 10px;
+    font-size: 16px; 
+}
+
 
 #search-container {
     margin-bottom: 20px;
@@ -41,7 +58,8 @@ body {
 
  #image-gallery, #image-details
  {
-    margin-bottom: 30px;
+
+    margin-bottom: 40px;
 }
 
 ul 
@@ -62,24 +80,42 @@ li:hover
 {
     background-color: #d0d0d0;
 }
-
+#gallery
+{
+    border: solid black;
+    
+}
 #gallery img
  {
-    width: 150px;
+    width: 160px;
     height: 150px;
     object-fit: cover;
     margin: 5px;
     cursor: pointer;
 }
 
+#gallery img:hover
+{
+   background-color: lightblue;
+   transform: scale(1.05);
+}
 #image-details 
 {
+    border: solid black;
+    text-decoration: underline;
+    padding: 15px;
     display: none;
 }
 
 #image-details img 
 {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }    
+
+#pagination
+{
+    padding-top: 20px;
+    padding-left: 40%;
+}
 
