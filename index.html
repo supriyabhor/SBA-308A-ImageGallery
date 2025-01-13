@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Image Gallery</title>
+        <title>SBA 308 Image Gallery</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -19,7 +19,9 @@
 
         <div id="categories-container">
             <h2>Popular Categories</h2>
-            <ul id="category-list"></ul>
+            <select id="category-dropdown">
+                <!-- Categories will be populated here dynamically -->
+            </select>
         </div>
     
         <div id="image-gallery">
@@ -32,8 +34,9 @@
             <h2>Image Details</h2>
             <div id="details"></div>
         </div>
-        
+
         <script type=module src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script type=module src="app.js" async defer></script>
     </body>
 </html>
+

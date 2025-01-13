@@ -1,1 +1,1 @@
-This project is a web application that we can see images by its category using pixels API.
+This project is a web application that we can see images by its category using pexels API.
